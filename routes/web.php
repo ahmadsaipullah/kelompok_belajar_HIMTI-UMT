@@ -34,3 +34,5 @@ Route::post('/regist', [registerController::class, 'store'])->name('register.sto
 
 // mahasiswa
 Route::get('/data-mahasiswa', [mahasiswaController::class, 'index'])->name('mahasiswa.index');
+Route::get('/create-mahasiswa', [mahasiswaController::class, 'create'])->name('mahasiswa.create');
+Route::post('/mahasiswa', [mahasiswaController::class, 'store'])->name('mahasiswa.store');
